@@ -22,10 +22,11 @@ h1{
   text-align: center;
   color: #fff;
 }
-h4{
+h4, h5, h6{
 
   color: #fff;
 }
+
 p{
   color: #FFF;
   text-align: center;
@@ -38,6 +39,18 @@ text-align:center;
 }
 section.top-bar-section {
 display: inline-block;
+}
+#certifications{
+  text-align: left;
+}
+label{
+  color: #fff;
+}
+.copyright{
+  float: left;
+}
+#seeall{
+  text-align: right;
 }
 /**************************
 *                         *
