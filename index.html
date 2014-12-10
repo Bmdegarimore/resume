@@ -82,6 +82,19 @@
 	</div>
 
 	<!--Technical Skills-->
+<<<<<<< HEAD
+		<div class="row" id="skills">
+				<h1>My Skills</h1>
+				<div class="small-8 small-centered columns">
+				<p>I have an expertise knowledge in a range of fields within the IT and Computer Science enviroment.
+					On the IT administration spectrum I have an undertanding for; Windows Servers, Active Directiry, Group Policy, Linux Administration, Basic and Advanced Hardware and Software Troubleshooting, and more. In Computer Science I have a strong grasp knowledge in; Computer Systems, C++, Data Structores, Web Development, Full Stack Development, and more. </p>
+				
+				</div>
+					  
+						<h2><a href="skills.html" target="_blank">Details >></a></h2>           
+				<hr/>
+			</div>
+=======
 
 	<div class="row" id="skills">
 		<h1>My Skills</h1>
@@ -134,6 +147,7 @@
 				<h2><a href="skills.html" target="_blank">Details >></a></h2>           
 		<hr/>
 	</div>
+>>>>>>> origin/master
 
 	<!--Education and Certifications-->
 	<div class="row" id="education">
@@ -211,13 +225,21 @@
       <div class="section-container tabs" data-section>
         <section class="section">
           <div class="content" data-slug="panel1">
-            <form>
+            <form name="contactform" method="post" action="contact.php">
               <div class="row collapse">
                 <div class="large-2 columns">
-                  <label class="inline">Your Name</label>
+                  <label class="inline">Your First Name</label>
                 </div>
                 <div class="large-10 columns">
-                  <input type="text" id="yourName" placeholder="John Smith">
+                  <input type="text" id="First_Name" placeholder="John" required>
+                </div>
+              </div>
+              <div class="row collapse">
+                <div class="large-2 columns">
+                  <label class="inline">Your Last Name</label>
+                </div>
+                <div class="large-10 columns">
+                  <input type="text" id="Last_Name" placeholder="Smith" required>
                 </div>
               </div>
               <div class="row collapse">
@@ -225,7 +247,7 @@
                   <label class="inline"> Your Email</label>
                 </div>
                 <div class="large-10 columns">
-                  <input type="text" id="yourEmail" placeholder="john@smithco.com">
+                  <input type="text" id="Email" placeholder="john@smithco.com" required>
                 </div>
               </div>
               <label>What's up?</label>
