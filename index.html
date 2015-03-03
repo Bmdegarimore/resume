@@ -17,7 +17,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
     <!-- github acitivity css -->
@@ -28,6 +28,8 @@
     <link id="theme-style" rel="stylesheet" href="css/styles.css">
     <link id="theme-style" rel="stylesheet" href="css/index.css">
 
+    <link id="theme-style" rel="stylesheet" href="css/animate.css">
+    
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -40,46 +42,59 @@
     <!-- ******HEADER****** -->
     <header class="header">
         <div class="container">
-            <img class="profile-image img-responsive pull-left" src="images/profile.png" alt="Brandon Degarimore" />
+            <img class="profile-image img-responsive pull-left animated zoomIn" src="images/profile.png" alt="Brandon Degarimore" />
             <div class="profile-content pull-left">
-                <h1 class="name">Brandon Degarimore</h1>
-                <h2 class="desc">Software Development Student and IT Contractor</h2>
-                <ul class="social list-inline">
+                <h1 class="name animated bounceInUp">Brandon Degarimore</h1>
+                <h2 class="desc animated bounceInUp">Software Development Student and IT Contractor</h2>
+                <ul class="social list-inline animated rollIn">
                     <li><a href="https://twitter.com/Sir_Branflakes"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="https://plus.google.com/+BrandonDegarimore/posts/p/pub"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/brandondegarimore"><i class="fa fa-linkedin"></i></a></li>
                     <li class="last-item"><a href="https://github.com/Branflakes15"><i class="fa fa-github-alt"></i></a></li>
                 </ul>
             </div><!--//profile-->
+
+            <!--Contact Link-->
+            <div class="animated fadeInRight">
             <a class="btn btn-cta-primary pull-right" href="#" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+            </div>
+
         </div><!--//container-->
     </header><!--//header-->
 
     <div class="container sections-wrapper">
         <div class="row">
             <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="about section">
+                <section class="about section animated bounceInLeft">
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>Hello my name is Brandon Degarimore, I'm a Software Development Student with a background in IT Network Administration. I'm youthful yet mature and professional who is willing to learn and grow. I uphold responsibility and am passionate to succeed and overcome challenging tasks. My dream career is to be a Cyber Security Analyst. I want to help secure networks and systems from vulnerabilities and threats. I strive to learn new security practices and analyzing risks and threats.</p>
+                            <!--<img class="img-responsive" src="images/brock.png" alt="me" />-->
+                                <p>Hello my name is Brandon Degarimore,
+                             I'm a Software Development Student with a background in IT Network Administration.
 
-                            <p>I have held membership with the Association of Computing and Machinary for over 2 years and have been a recipient of the National Science Foundation S-STEM Technology Scholarship. I enjoy supporting and participating in various volunteer organizations including the American Red Cross, and the American Cancer Society. I'm very active in my community helping with student outreach and tutoring programs. In my leisure time I like to excersise my body in long distance running and other cardio intensive workouts.</p>
+                            </p>
+
+                            <!--<img class="img-responsive" src="images/cs2.png" alt="me" />-->
+
+                            <p>
+                                This is my portolio website, feel free to look around and learn about me.
+                            </p>
 
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </section><!--//section-->
 
-               <section class="latest section">
+               <section class="latest section animated fadeInLeft">
                     <div class="section-inner">
                         <h2 class="heading">Latest Projects</h2>
                         <div class="content">
 
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="" target="_blank">Green River Aviation Department - Aviation Website</a></h3>
-                                <p class="summary">A flashcard website to help with aviation terminology for international students</p>
+                                <h3 class="title"><a data-toggle="modal" data-target="#aviation" role="button" class="btn btn-link btn-lg">Green River Aviation Department - Aviation Website</a></h3>
+                                <p class="summary">A resource website to help international students learn Aviation terminology</p>
                                 <div class="featured-image">
-                                    <a href="#" target="_blank">
+                                    <a href="portfolio.html" target="_blank">
                                     <img class="img-responsive project-image" src="images/projects/project-featured.png" alt="project name" />
                                     </a>
                                     <div class="ribbon">
@@ -87,19 +102,38 @@
                                         </div>
                                     </div>
 
-                                <div class="desc text-left">
-                                    <p>The Aviation department at Green River College needed an online learning resource for international students who were having trouble with aviation terminology and pronounciation.</p>
+
+                                 <!-- Modal For project description -->
+                            <div class="modal" id="aviation" tabindex="-1" role="dialog" aria-labelledby="aviation" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="aviationDesc">Aviation Flashcard Website</h4>
+                                  </div>
+                                  <div class="modal-body">
+
+                                     <p>The Aviation department at Green River College needed an online learning resource for international students who were having trouble with aviation terminology and pronounciation.</p>
                                     <p>My team built a website and a mySQL database for the project incorporating practices we learned in our Web Development class. The project spanned up to 8 weeks and in that time we built a Flash card section, memory matching game, quiz section, an administration site which the admin can add new sections, cards, and audio. We also built PHP scripts to handle user authentication and administration sessions from client side to the database.</p>
-                                </div><!--//desc-->
+                                  
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <a href="projects/aviation.html" target="_blank" class="btn btn-primary" role="button">More</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
                                 <!--<a class="btn btn-cta-secondary" href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank"><i class="fa fa-thumbs-o-up"></i></a> -->
                             </div><!--//item-->
                             <hr class="divider" />
                             <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/" target="_blank">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="#" target="_blank">
                                 <img class="img-responsive project-image" src="images/projects/project-1.png" alt="PC Repair Shop Android App" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="android.html" target="_blank">Green River PC Repair Shop - Android App</a></h3>
+                                    <h3 class="title">Green River PC Repair Shop - Android App</h3>
                                     <p>Built a production level android app designed to optimize effiency and process. Migrating an old paper system to a digital platform that conventially talked to a database to store customer contact information allowing repair technications to track and easily contact customers.</p>
                                     <p><a class="more-link" href="android.html" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                 </div><!--//desc-->
@@ -115,9 +149,15 @@
                         <h2 class="heading">Class Projects</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><a href="">Advice Server in C</a> <span class="label label-theme">Open Source</span></h3>
+                                <h3 class="title"><a href="classprojects.html">Advice Server in C</a> <span class="label label-theme">Open Source</span></h3>
                                 <p class="summary">Built a small advice server in which a classmate would telnet into and it would give them a message upon a complete connection. This project was used to teach us basic understanding of socket programming.</p>
                                 <p><a class="more-link" href="#" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title"><a href="classprojects.html">Amazeriffic</a> <span class="label label-theme">Open Source</span></h3>
+                                <p class="summary">Activity derived from Semmy Purewal's book "Learning Web App Development". The project lasted several chapters progressivly building from a basic HTML page to a deployable node.js server using the express module.</p>
+                                <p><a class="more-link" href="https://github.com/Branflakes15/Amazerrific" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                             </div><!--//item-->
 
                             <!-- <a class="btn btn-cta-secondary" href="#"><i class="fa fa-chevron-right"></i></a> More button -->
@@ -131,17 +171,17 @@
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Website Administrator - <span class="place"><a href="#">TheraTek</a></span> <span class="year">(Summer 2014 - Fall 2014)</span></h3>
+                                <h3 class="title">Website Administrator - <span class="place">TheraTek</span> <span class="year">(Summer 2014 - Fall 2014)</span></h3>
                                 <p></p>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title">General Manager - <span class="place"><a href="#">Green River PC Repair Shop</a></span> <span class="year">(Winter 2014 - Spring 2014)</span></h3>
+                                <h3 class="title">General Manager - <span class="place">Green River PC Repair Shop</span> <span class="year">(Winter 2014 - Spring 2014)</span></h3>
                                 <p>Due to my outstanding performance and leadership I was promoted to General Manager. My responsibilities changed to managing multiple technicians, handling bank deposists, more customer performance and asssitance, ensuring all levels of IT service management and customer support, and implementing general IT security practices and procedures.</p>
                             </div><!--//item-->
 
                             <div class="item">
-                                <h3 class="title">Repair Technician - <span class="place"><a href="#">Green River PC Repair Shop</a></span> <span class="year">(Fall 2013 - End of Fall 2013)</span></h3>
-                                <p>As a Repair Technician it was my responsiblity to uphold company policies and procedures at all times in the work enviroment. My responsibilities as a Repair Technician included, troubleshooting basic and advanced software or hardware problems, maintain well and descriptive repair logs, handle customer requests and problems to resolve numerous computer problems.</p>
+                                <h3 class="title">Repair Technician - <span class="place">Green River PC Repair Shop</span> <span class="year">(Fall 2013 - End of Fall 2013)</span></h3>
+                                <p>As a Repair Technician it was my duty to uphold company policies and procedures at all times in the work enviroment. My responsibilities as a Repair Technician included, troubleshooting basic and advanced software or hardware problems, maintain well and descriptive repair logs, handle customer requests and problems to resolve numerous computer problems.</p>
                             </div><!--//item-->
 
                         </div><!--//content-->
@@ -164,10 +204,14 @@
                     <div class="section-inner">
                         <h2 class="heading">Activities and Memberships</h2>
                         <div class="content">
-                            <div class="item">
-                                <a href="http://www.prccdc.org/"><h3 class="title">PRCCDC 2014 </a><span class="year">(March 2014)</span></h3>
+                            <div class="item featured">
+                                <a href="http://www.prccdc.org/" target="_blank"><h3 class="title">PRCCDC 2014 </a><span class="year">(March 2014)</span></h3>
                                 <p>I was a particpating team member for Green River's Pacific Rim Collegiate Cyber Defense Competition Team. It was a two day competition where we as a team are sent to handle real world IT and Security problems and issues. Ranging from company website defacement, Social engineering attacks, and company network breach.</p>
-                                <img class="img-responsive project-image" src="images/2014BlueWhite.jpg" alt="PRCCDC" />
+                                <div class="featured-image text-center">
+                                    <a href="http://www.prccdc.org/" target="_blank">
+                                <img class="img-responsive" src="images/2014BlueWhite.jpg" alt="PRCCDC" />
+                                    </a>
+                                </div>
                             </div><!--//item-->
 
                         </div><!--//content-->
@@ -178,7 +222,7 @@
             </div><!--//primary-->
 
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
+                 <aside class="info aside section animated bounceInUp">
                     <div class="section-inner">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
@@ -190,7 +234,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//aside-->
 
-                <aside class="skills aside section">
+                <aside class="skills aside section animated bounceInUp">
                     <div class="section-inner">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
@@ -377,5 +421,18 @@
     <!--<script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>-->
     <!-- custom js -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/velocity.js"></script>
+    <!--Analytics-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60329316-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
 </html>
